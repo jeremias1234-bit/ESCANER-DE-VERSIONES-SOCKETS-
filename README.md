@@ -6,11 +6,11 @@ Este proyecto es una herramienta de consola interactiva (CLI) desarrollada en **
 
 El script inicia el saludo de tres vías completo (TCP Three-Way Handshake) para abrir un canal de comunicación real y analiza el comportamiento del puerto según el tipo de protocolo:
 
-```
+```text
 [ Tu Script Python ] ─── TCP (Handshake Completo) ───> [ Puerto Objetivo ]
          │                                                      │
          ├─── Caso A (SSH/FTP): Escupe el banner solo ──────────┤
-         │    (Captura directa de los primeros 1024 bytes)     │
+         │    (Captura directa de los primeros 1024 bytes)      │
          │                                                      │
          └─── Caso B (Web 80/443/8080): Puerto tímido ──────────┤
               (Envía HEAD / HTTP/1.1 -> Filtra cabecera Server) │
